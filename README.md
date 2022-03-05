@@ -5,7 +5,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/StrawberryCorps/Unknown?style=for-the-badge)](https://github.com/StrawberryCorps/Unknown/issues)
 [![GitHub license](https://img.shields.io/github/license/StrawberryCorps/Unknown?style=for-the-badge)](https://github.com/StrawberryCorps/Unknown)
 
-Unknown is a Java application that automatically manages game servers. Unknown also includes a Web server that allows you to monitor / manage the servers.
+Unknown is a GoLang application that automatically manages game servers. Unknown also includes a Web server that allows you to monitor / manage the servers.
 
 ## About The Project
 
