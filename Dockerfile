@@ -10,6 +10,7 @@ COPY . ./
 
 RUN go build -o /unknown-app
 
+/******/
 FROM alpine
 
 WORKDIR /
