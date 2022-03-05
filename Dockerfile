@@ -10,7 +10,7 @@ COPY . ./
 
 RUN go build -o /unknown-app
 
-/******/
+# RUNNER
 FROM alpine
 
 WORKDIR /
