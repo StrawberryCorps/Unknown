@@ -5,17 +5,6 @@ import (
 	"unknown/strawberrycorps/rest"
 )
 
-/*
-URLs:
-- /api/game : GET liste des serveurs de jeu en cours de fonctionnement
-- /api/game : POST pour lancer un serveur de jeu
-- /api/game/:id : DELETE pour supprimer un serveur de jeu
-- /api/game/:id : GET pour récupérer un serveur de jeu
-
-- /api/health : GET infos sur tous les serveurs de jeu
-- /api/health/:id : GET infos sur un serveur de jeu
-*/
-
 func InitRoutes(router *gin.Engine) {
 	router.GET("/api/game", rest.Games)
 	router.POST("/api/game", rest.CreateGame)
