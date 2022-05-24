@@ -8,7 +8,7 @@ import (
 
 func Games(c *gin.Context) {
 	c.Header("Content-Type", "application/json")
-	service.GetGamesService()
+	service.GetGamesService(c)
 }
 
 func CreateGame(c *gin.Context) {
@@ -26,12 +26,11 @@ func DeleteGame(c *gin.Context) {
 
 }
 
-func GetGame(c *gin.Context) {
-	c.Header("Content-Type", "application/json")
+func GetGameLogs(c *gin.Context) {
 	var gameUri ustruct.GameUri
 	if err := c.ShouldBindUri(&gameUri); err != nil {
 		c.JSON(400, gin.H{"msg": err.Error()})
 		return
 	}
-
+	service.GetGameLogsService(gameUri, c)
 }
